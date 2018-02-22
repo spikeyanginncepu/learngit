@@ -1,1 +1,2 @@
-new file
+# wtf
+print("Hello World!")
