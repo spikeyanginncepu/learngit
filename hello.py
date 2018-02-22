@@ -1,2 +1,2 @@
-# wtf
-print("Hello World!")
+# mult-usr dev
+print('Hello World!')
