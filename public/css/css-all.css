@@ -1,0 +1,952 @@
+body{
+    margin:0;
+    padding:0;
+    width: 1920px;
+    height: 1080px;
+}
+.header{
+    margin: 0;
+    padding:0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:10%;
+    background: hsl(172, 36%, 84%);
+}
+#geirilogo{
+    height:80%;
+}
+.logo{
+    margin: 0;
+    padding:0;
+    float : left;
+    height:100%;
+    width:17%;
+    /* background: mediumorchid; */
+}
+.prdName{
+    height:50%;
+    width:80%;
+    float : left;
+    /* background: tan; */
+}
+.prdName > p {
+    margin-top: 0;
+    margin-left:20%;
+    font-size: 40px;
+    font-family: Microsoft Yahei;
+    color:rgb(44, 128, 114);
+}
+.nav{
+    margin: 0;
+    padding:0;
+    position: relative;
+    float : left;
+    height:50%;
+    width:80%;
+    /* background: palevioletred; */
+}
+.alink{
+    position: absolute;
+    text-align: center;
+    /* background: palegreen; */
+    width:90%;
+    height:50%;
+    bottom:10;
+    float: left;
+}
+.acontainer{
+    /* margin-top: 10px; */
+    padding:0;
+    float: left;
+    width:30%;
+    /* border-radius: 8px; */
+    /* border: red solid; */
+    /* background: red; */
+}
+.acontainer:hover{
+    font-size: 110%;
+}
+a{
+    /* background:yellowgreen; */
+    font-size: 130%;
+    text-decoration: none;
+    font-family: Microsoft YaHei;
+    font-weight: 500;
+    color: rgb(44, 128, 114);
+}
+.dataManagement{
+    color: rgb(44, 128, 114);
+    font-family: Microsoft YaHei;
+    font-weight: 1000;
+    font-size: 130%;
+}
+.taskManagement{
+    color: rgb(44, 128, 114);
+    font-family: Microsoft YaHei;
+    font-weight: 1000;
+    font-size: 130%;
+}
+.userManagement{
+    color: rgb(44, 128, 114);
+    font-family: Microsoft YaHei;
+    font-weight: 1000;
+    font-size: 130%;
+}
+.settings{
+    /* position: absolute; */
+    /* margin-top:2%; */
+    padding:0;
+    /* background:wheat; */
+    float:right;
+    width:10%;
+    height:80%;
+}
+.settings > img{
+    margin-left: 10%;
+    margin-top: 12%;
+    width:23;
+    height:23;
+    float: left; 
+    /* background: red; */
+}
+.settings > p{
+    /* display: inline-block; */
+    margin-left:3%;
+    margin-right: 3%;
+    margin-top: 12%;
+    font-family: Microsoft Yahei;
+    font-size: 100%;
+    float: left; 
+    /* background: violet; */
+}
+.main{
+    background: hsl(172, 36%, 84%);
+    height:90%;
+}
+.console{
+    width: 86.5%;
+    height: 100%;
+    float : left;
+    /* border:1px solid red; */
+    border-radius: 15px;
+    background: whitesmoke;
+}
+.nav2{
+    /* border:1px solid black; */
+    float : left;
+    width:13%;
+    height:100%;
+}
+.nav2>h{
+    display:block;
+    margin-top:20%;
+    margin-left: 10%;
+    font-size: 130%;
+    font-family: Microsoft Yahei;
+    text-align: center;
+}
+.nav2 > ul{
+    margin-top: 20%;
+    list-style:none;
+    border:1px solid black;
+}
+.nav2>ul>li{
+    border:1px solid red;
+}
+.nav2>ul>li>button{
+    /* padding:10%; */
+    margin-left: -10%;
+    width:120%;
+    height:10%;
+    /* background: rgba(24, 23, 23, 0); */
+    border: 1px solid rebeccapurple;
+    font-size:150%;
+    /* border-radius: 8px; */
+}
+.nav2>ul>li>button:hover{
+    background: rgb(108, 202, 190);
+}
+
+/****************usermanagement-start**************/
+.UM_container{
+    /* background: red; */
+}
+/*manybtn  same with dMmaybtn*/
+/*search  same with dMsearch*/
+/*searchbtn  same with dMsearchbtn*/
+/*searchbox  same with dMsrchPrintbox*/
+.UM_userList{
+    /* border: solid 1px hsl(174, 29%, 64%); */
+    width: 70%;
+    height: 80%;
+    margin-top: 2%;
+    margin-left: 3%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.UM_userlisttable{
+    width:100%;
+    padding:0;
+    margin:0;
+    font-family: Microsoft Yahei;
+    font-size: 105%;
+    border-collapse: collapse; 
+    text-align: center;
+    table-layout:fixed;
+}
+.UM_ulistrow{
+    height:60px;
+}
+.UM_ulistrow:hover{
+    background: hsl(172, 36%, 84%);
+}
+.UM_ulistbtn{
+    background:hsl(174, 29%, 64%);
+    font-family:Microsoft Yahei;
+    border:0;
+    border-radius:5px;
+    width:70px;
+    height:30px;
+}
+.UM_ulistbtn:hover{
+    background:hsl(174, 16%, 45%);
+}
+.UM_UM-row0{
+    /* background: red; */
+}
+/****************usermanagement-end**************/
+/***************userEdit-start**************/
+.UE_config{
+	margin-top:2%;
+	margin-left:40;
+	font-family: MicrosoftYahei;
+	font-size:150%;
+    font-weight: 900;
+}
+
+.UE_setting_passwd{
+	border: solid 1px hsl(174, 29%, 64%);
+	width:90%;
+	height:180;
+	margin-top:1%;
+	margin-left:60;
+}
+
+.UE_changing_passwd{
+	margin-left:30;
+	font-family: MicrosoftYahei;
+	font-size:120%;
+    font-weight: 900;
+}
+
+.UE_filling_passwd{
+	margin-left:90;
+}
+
+.UE_authority_setting{
+	border: solid 1px hsl(174, 29%, 64%);
+	width:90%;
+	height:55%;
+	margin-top:1%;
+	margin-left:60;
+}
+
+.UE_authority_setting > button{
+	margin-left:1000;
+}
+
+.UE_authority_changing{
+	margin-left:30;
+	font-family: MicrosoftYahei;
+	font-size:120%;
+    font-weight: 900;
+}
+.UE_headings{
+    margin-left:60;
+    margin-top:2%;
+    width:100%;
+    padding: 0;
+    /* background: cornflowerblue; */
+    font-size: 100%;
+    font-family: Microsoft Yahei;
+    font-weight: 200;
+}
+.UE_fileList{
+    border: solid 1px hsl(174, 29%, 64%);
+    width: 93%;
+    height: 60%;
+    margin-top: 1%;
+    margin-left: 60;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+#UE_data_dir{
+    margin-left: 0;
+	font-weight: 500;
+}
+#UE_read_authority{
+    margin-left: 50%;
+	font-weight: 500;
+}
+#UE_write_authority{
+    margin-left: 20%;
+	font-weight: 500;
+}
+#UE_coverall{
+	margin-left:60;
+	margin-top:15;
+}
+.UE_permissiontable{
+    width:100%;
+    height:80%;
+    /* background: palegreen; */
+    text-align:center;
+    font-family: MicrosoftYahei;
+    font-size: 105%;
+    border-collapse: collapse; 
+}
+.UE_permissiontable_tr{
+    padding:0;
+    margin:0;
+    font-family: Microsoft Yahei;
+    font-size: 105%;
+    border-collapse: collapse; 
+    text-align: center;
+}
+.UE_permissiontable_tr:hover{
+    background:hsl(174, 29%, 64%);
+}
+/***************userEdit-end**************/
+/*****************taskManagement-start**************/
+.TM_rightNav{
+    margin-top: 20%;
+    width:100%;
+    height:58%;
+    text-align:right;
+    font-family: Microsoft Yahei;
+    font-size: 105%;
+    border-collapse: collapse; 
+}
+.TM_rightNav_col0{
+    width:50%;
+    text-align: right;
+}
+.TM_rightNav_col1{
+    width:50%;
+    text-align: left;
+}
+.TM_rightNav_colimg{
+    margin-right: 20%;
+    widows:30;
+    height:30;
+    /* display: inline;  */
+    float: right; 
+}
+.TM_rightNav_tr{
+    padding:0;
+    margin:0;
+    font-family: Microsoft Yahei;
+    font-size: 105%;
+    border-collapse: collapse; 
+    text-align: center;
+}
+.TM_rightNav_tr:hover{
+    background:hsl(174, 29%, 64%);
+}
+.TM_manybtn{
+    width:90%;
+    margin-top:12;
+    margin-left:50;
+    padding: 0.5%;
+    height:4%;
+    /* float: left; */
+    /* background: green; */
+}
+.TM_manybtn>p{
+    display:inline-block;
+    font-family: Microsoft Yahei;
+    margin-right: 5%;
+}
+.TM_manybtn > button{
+    width: 6%;
+    height:100%;
+    margin-right: 1.5%;
+    background: hsl(174, 29%, 64%);
+    border: none;
+    border-radius: 5px;
+    font-family: Microsoft YaHei;
+    font-size: 90%;
+    margin-top: 0;
+}
+.TM_manybtn > button:hover{
+    background: hsl(174, 16%, 45%);
+}
+#TM_search{
+    display: inline-block;
+    width:35%;
+    height:100%;
+    /* background: blueviolet; */
+    /* float: right; */
+    margin-left: 10%;
+}
+#TM_searchbtn{
+    background:hsl(174, 29%, 64%);
+    border-radius: 5px;
+    border:none;
+    width:15%;
+    height:100%;
+    font-family: Microsoft Yahei;
+    font-size: 100%;
+}
+#TM_searchbtn:hover{
+    background: hsl(174, 16%, 45%);
+}
+#TM_searchbox {
+    height:90%;
+    width:75%;
+    margin-left: 3%;
+    padding:0;
+    border: solid 1px hsl(174, 29%, 64%);
+    font-size: 100%;
+}
+.TM_fileList{
+    border: solid 1px hsl(174, 29%, 64%);
+    width: 93%;
+    height: 80%;
+    margin-top: 1%;
+    margin-left: 60;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.TM_tasklisttable{
+    height:100%;
+    width:90%;
+    padding:0;
+    margin:0;
+    font-family: Microsoft Yahei;
+    font-size: 105%;
+    border-collapse: collapse; 
+    text-align: center;
+}
+.TM_tasklisttable_tr,.TM_tasklisttable_td{
+    padding:0;
+    margin:0;
+    font-family: Microsoft Yahei;
+    font-size: 105%;
+    border-collapse: collapse; 
+    text-align: center;
+}
+.TM_tasklisttable_tr:hover{
+    background:hsl(174, 29%, 64%);
+}
+/*****************taskManagement-end**************/
+/*****************taskEdit-start**************/
+.TE_tasksetting{
+    border: solid 1px hsl(174, 29%, 64%);
+    float : left;
+    width: 53%;
+    height: 96%;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+.TE_usertree{
+    border: solid 1px hsl(174, 29%, 64%);
+    float : left;
+    width: 42%;
+    height: 96%;
+    margin-top: 1%;
+    margin-left:2%;
+}
+.TE_button1{
+    background:hsl(174, 29%, 64%);
+    border-radius: 5px;
+    border:none;
+    width:13%;
+    height:4%;
+    font-family: Microsoft Yahei;
+    font-size: 100%;
+    margin-left: 10px;
+}
+.TE_defect-font1{
+    font-family: Microsoft Yahei;
+    font-size: 105%;  
+}
+.TE_defect-font2{
+    font-family: Microsoft Yahei;
+    font-size: 95%;  
+}
+.TE_defect0{
+    margin-left: 5%;
+}
+.TE_defect1{
+    width:30%;
+    font-family: Microsoft Yahei;
+    font-size: 105%;  
+    margin-left: 27%;
+}
+.TE_text1{
+    width:40%;
+    height:5%;
+    font-family: Microsoft Yahei;
+    font-size: 100%;
+    margin-left: 10px;
+}
+.TE_div1{
+    margin-left: 5%;
+    margin-top: 1%;
+}
+.TE_div2{
+    border: solid 1px hsl(174, 29%, 64%);
+    margin-left: 2%;
+    margin-top: 1%;
+    width: 95%;
+    height: 40%;
+}
+.TE_div1-table{
+    margin-left: 5%;
+    margin-top: 1%;
+    border: solid 1px hsl(174, 29%, 64%);
+    height: 51%;
+    width:90%;
+    overflow: scroll;
+}
+.TE_colorselect{
+    width: 20px;
+    background:hsl(174, 29%, 64%);
+}
+#TE_submit_new_tast{
+    background:hsl(174, 29%, 64%);
+    border-radius: 5px;
+    border:none;
+    width:15%;
+    height:4%;
+    font-family: Microsoft Yahei;
+    font-size: 100%;
+    margin-left: 40%;
+    margin-top: 1%
+}
+.TE_table1{
+    margin-top: 1%;
+    width:100%;
+    height:20%;
+    /* background: palegreen; */
+    text-align:right;
+    font-family: MicrosoftYahei;
+}
+.TE_tr1,.TE_td1{
+    padding:0;
+    margin:0;
+    font-family: Microsoft Yahei;
+    font-size: 100%;
+    border-collapse: collapse; 
+    text-align: center;
+}
+.TE_tr1:hover{
+    background: hsl(174, 16%, 45%);
+
+}
+/*****************taskEdit-end**************/
+/*****************setting-start**************/
+#ST_userEditTable{
+    /* background: hotpink; */
+    border-collapse:collapse;
+    margin-top: 5%;
+    width:30%;
+    height:70%;
+    font-size:120%;
+    text-align: center;
+    font-family: Microsoft YaHei;
+    color: rgb(44, 128, 114);
+    margin-left: 25%;
+}
+
+.ST_usertabletext{
+    width:80%;
+    height:60%
+}
+.ST_usertableselect{
+    width:80%;
+    height:40%;
+}
+#ST_confirmUserEdit{
+    width:20%;height:60%;background: hsl(174, 29%, 64%);border: none;border-radius: 3px;font-family: Microsoft YaHei;font-size: 80%;
+}
+#ST_confirmUserEdit:hover{
+    background: hsl(174, 16%, 45%);
+}
+
+/*****************setting-end**************/
+/*****************judgement-start**************/
+#JD_resultList{
+    margin-top: 5%;
+    float: right;
+    width:95%;
+    height:87%;
+    border: solid 1px hsl(174, 29%, 64%);
+    overflow:auto;
+    overflow-x: auto;
+}
+.JD_resultDir{
+    /* display: inline-block; */
+    margin-top:0.5%;
+    margin-left:3%;
+    float:left;
+    /* background: rgb(168, 168, 214); */
+    height:7%;
+    width:70%;
+}
+.JD_resultDir >span> p{
+    margin-top: 1%;
+    height:80%;
+    width:100%;
+    font-size: 120%;
+    font-family: Microsoft Yahei;
+    /* background: crimson; */
+}
+.JD_state{
+    margin-top: 0%;
+    display: inline-block;
+    margin-left:8.4%;
+    font-size: 120%;
+    font-family: Microsoft Yahei;
+    /*float: left;
+    /* background: crimson; */
+    height:5%;
+}
+.JD_imgAndInfo{
+    float:left;
+    margin-left: 2%;
+    margin-right: 10%;
+    margin-top:1%;
+    height:88%;
+    width:98%;
+    /* border: solid 1px hsl(36, 29%, 64%); */
+}
+.JD_imgContainer{
+    float:left;
+    width:80%;
+    height:100%;
+}
+#JD_mainImage{
+    float:left;
+    margin:0;
+    height:100%;
+    width: 100%;
+}
+.JD_infoContainer{
+    margin-left: 1%;
+    float:left;
+    width:19%;
+    height:100%;
+    /* background: cornflowerblue; */
+    font-size: 120%;
+    font-family: Microsoft Yahei;
+}
+.JD_infoContainer > textarea{
+    margin-top:12%;
+    margin-bottom:5%;
+    width:95%;
+    height:72%;
+    font-size: 110%;
+    font-family: Microsoft Yahei;
+}
+.JD_infoContainer>p{
+    margin-top: 7%;
+}
+.JD_rightorwrong{
+    margin-top: 12%;
+}
+.JD_rightorwrong > label{
+    margin-right:31%;
+}
+.JD_imageChange{
+    margin-top: 7%;
+    height:5%;
+    border-collapse: collapse;
+    width:98%;
+    /* background: papayawhip; */
+}
+.JD_changebtn{
+    width:33%;
+}
+.JD_changebtn > button{
+    background:hsl(174, 29%, 64%);
+    border-radius: 5px;
+    border:none;
+    width:88%;
+    height:100%;
+    font-family: Microsoft Yahei;
+    font-size: 100%;
+}
+.JD_changebtn>button:hover{
+    background: hsl(174, 16%, 45%);
+}
+/*****************judgement-end**************/
+/*****************datamanagement-start**************/
+
+.dMmanybtn{
+    width:90%;
+    margin-top:20;
+    margin-left:50;
+    padding: 0.5%;
+    height:4%;
+    /* float: left; */
+    /* background: green; */
+}
+.dMmanybtn > button{
+    width: 6%;
+    height:100%;
+    margin-right: 1.5%;
+    background: hsl(174, 29%, 64%);
+    border: none;
+    border-radius: 5px;
+    font-family: Microsoft YaHei;
+    font-size: 90%;
+    margin-top: 0;
+}
+.dMmanybtn > button:hover{
+    background: hsl(174, 16%, 45%);
+}
+
+#dMsearch{
+    display: inline-block;
+    width:35%;
+    height:100%;
+    /* background: blueviolet; */
+    /* float: right; */
+    margin-left: 10%;
+}
+#dMsearchbtn{
+    background:hsl(174, 29%, 64%);
+    border-radius: 5px;
+    border:none;
+    width:15%;
+    height:100%;
+    font-family: Microsoft Yahei;
+    font-size: 100%;
+}
+#dMsearchbtn:hover{
+    background: hsl(174, 16%, 45%);
+}
+#dMsrchPrintbox {
+    height:90%;
+    width:75%;
+    margin-left: 3%;
+    padding:0;
+    border: solid 1px hsl(174, 29%, 64%);
+    font-size: 100%;
+}
+
+.dMdir{
+    width:90%;
+    text-align: left;
+    padding: 1%;
+    /* background: red; */
+    margin-left:40;
+    font-family: Microsoft YaHei;
+    font-size: 90%;
+}
+.dMdirlink{
+    color:hsl(174, 29%, 64%);
+    font-family: Microsoft YaHei;
+}
+
+
+.dMfileList{
+    border: solid 1px hsl(174, 29%, 64%);
+    width: 93%;
+    height: 75%;
+    margin-top: 1%;
+    margin-left: 60;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+/* second adding - dataManagement-nav2-fixed*/
+.dMrightNav{
+    margin-top: 20%;
+    width:100%;
+    height:35%;
+    /* background: palegreen; */
+    text-align:right;
+    font-family: Microsoft Yahei;
+    font-size: 105%;
+    border-collapse: collapse; 
+}
+/*table,tr,td{
+    padding:0;
+    margin:0;
+    font-family: Microsoft Yahei;
+    font-size: 105%;
+    border-collapse: collapse; 
+    text-align: center;
+}*/
+.dMcol0{
+    width:50%;
+    text-align: right;
+}
+.dMcol1{
+    width:50%;
+    text-align: left;
+}
+.dMimg{
+    margin-right: 20%;
+    widows:30;
+    height:30;
+    /* display: inline;  */
+    float: right; 
+}
+.dMrow{
+    padding:0;
+    margin:0;
+    font-family: Microsoft Yahei;
+    font-size: 105%;
+    border-collapse: collapse; 
+    text-align: center;
+}
+.dMrow:hover{
+    background:hsl(174, 29%, 64%);
+}
+.dMtable{
+    height:1000px;
+    width:100%;
+    padding:0;
+    margin:0;
+    font-family: Microsoft Yahei;
+    font-size: 105%;
+    border-collapse: collapse; 
+    text-align: center;
+}
+.dMtable_tr,.dMtable_td{
+    padding:0;
+    margin:0;
+    font-family: Microsoft Yahei;
+    font-size: 105%;
+    border-collapse: collapse; 
+    text-align: center;
+}
+.dMtable_tr:hover{
+    background:hsl(174, 29%, 64%);
+}
+/*****************datamanagement-end**************/
+/*****************useradd-start**************/
+/* third adding - userAdding-console*/
+
+#uAmainLabelBox{
+    /*background:gray;*/
+    width: 93%;
+    height: 85%;
+    margin-top: 2%;
+	margin-left: 2%;
+	padding:0;
+	float: left;
+}
+
+
+#uAtabelbox{
+    /*background: blueviolet;*/
+	/*border: 1px;*/
+	/*border-radius: 5px;*/
+	width:40%;
+    height:33%;
+	margin-top: 6%;
+    margin-left: 23%;
+	padding: 2%;
+	padding-top:1.5%;
+	padding-bottom:1.5%;
+}
+
+#uAtd0{
+	/*background:blue;*/
+    /*border:1px solid black;*/
+    width:20%;
+    height:33%;
+    font-family: Microsoft Yahei;
+    font-size: 20;
+	text-align:center;
+}
+#uAtd1{
+	/*background:red;*/
+    /*border: 1px solid black;*/
+    /*width:67%;*/
+    /*height:33%;*/
+    font-family: Microsoft Yahei;
+    font-size: 20;
+}
+#uAPrintbox{
+    height:55%;
+    width:90%;
+	margin-top:1%;
+    margin-left: 3%;
+    padding-left:1%;
+    /*border: solid 1px hsl(174, 29%, 64%);*/
+	border: solid 1px gray;
+    font-size: 100%;
+}
+
+#uAcheckBox{
+	/*background: blueviolet;*/
+	width:60%;
+    height:18%;
+	margin-top: 0%;
+    margin-left: 24%;
+	/*border: 1px solid black;*/
+	padding: 1%;
+	color:gray;
+}
+#uAtdC{
+	/*background:blue;*/
+    /*border:1px solid black;*/
+    width:5%;
+    height:33%;
+    font-family: Microsoft Yahei;
+    font-size: 5;
+	text-align:center;
+}
+#uAtdCL{
+	/*background:red;*/
+    /*border: 1px solid black;*/
+    font-family: Microsoft Yahei;
+    font-size: 18;
+}
+#uAchkBox{
+    height:40%;
+    width:50%;
+	margin-top:1%;
+    margin-left: 3%;
+    padding-left:1%;
+    border: solid 1px hsl(174, 29%, 64%);
+    font-size: 100%;
+}
+#uAbuttonBox{
+	width:10%;
+    height:5%;
+	margin-top: 0.5%;
+    margin-left: 24%;
+	/*border: 1px solid black;*/
+	padding-top:4%;
+	padding-left: 2%;
+	padding-bottom: 1%;
+}
+.uAbutton {
+    background: hsl(174, 29%, 64%);
+    margin: 4px 2px;
+	border: none;
+	border-radius:5px;
+    padding: 11px 33px;
+    text-align: center;
+	font-family: Microsoft Yahei;
+    font-size: 18px;
+	color: black;
+}
+
+.uAbutton:hover{
+    background: hsl(174, 16%, 45%);
+}
+/*****************useradd-end**************/
+
+
+
+
+
