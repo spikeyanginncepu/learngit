@@ -1,0 +1,1 @@
+learn how merge remote file, now local train.txt is added, and remote terminal t3.txt is added, I want pull first, then push.
